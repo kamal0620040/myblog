@@ -40,5 +40,5 @@ node_modules
 npm-shrinkwrap.json
 yarn.lock
 
-/content/pages/about
-/content/posts
+# /content/pages/about
+# /content/posts
