@@ -10,7 +10,7 @@ const Author = () => {
 
   return (
     <div className={styles.author}>
-      <p className={styles.bio}>
+      {/* <p className={styles.bio}>
         {author.bio}
         <a
           className={styles.twitter}
@@ -20,7 +20,7 @@ const Author = () => {
         >
           <strong>{author.name}</strong> on Twitter
         </a>
-      </p>
+      </p> */}
     </div>
   );
 };

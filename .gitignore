@@ -40,5 +40,6 @@ node_modules
 npm-shrinkwrap.json
 yarn.lock
 
-# /content/pages/about
-# /content/posts
+/content/pages/about
+/content/posts/2016-01-09---Perfecting-the-Art-of-Perfection
+/content/posts/2017-19-08---Humane-Typography-in-the-Digital-Age
