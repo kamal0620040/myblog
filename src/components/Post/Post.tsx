@@ -1,5 +1,6 @@
 import React from "react";
 
+import { ClapButton,Provider } from "@lyket/react";
 import { Link } from "gatsby";
 
 import type { Node } from "@/types";
@@ -30,7 +31,14 @@ const Post: React.FC<Props> = ({ post }: Props) => {
       <div className={styles.content}>
         <Content body={html} title={title} />
       </div>
-
+      <div className={styles.clapButton}>
+      <Provider apiKey="pt_57a9c99e5c4b00e2779e77bf1c06db">
+        <ClapButton
+          namespace={title.split(" ").join("-")}
+          id="posts"
+        />
+      </Provider>      
+    </div>
       <div className={styles.footer}>
         <Meta date={date} />
         {tags && tagSlugs && <Tags tags={tags} tagSlugs={tagSlugs} />}
@@ -40,7 +48,7 @@ const Post: React.FC<Props> = ({ post }: Props) => {
       <div className={styles.comments}>
         <Comments postSlug={slug} postTitle={post.frontmatter.title} />
       </div>
-    </div>
+      </div>
   );
 };
 

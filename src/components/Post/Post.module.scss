@@ -18,6 +18,24 @@
     @include margin-auto();
   }
 
+  .clapButton{
+    font-weight: bold;
+    position: absolute;
+    right: 100px;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 35px;
+  }
+
+  .clapButton div div:first-of-type{
+    background-color: deeppink;
+    border-radius: 100%;
+  }
+
+  .clapButton div div:last-of-type{
+    color: white;
+  }
+
   .button {
     border: 1px solid $color-gray-border;
     border-radius: $button-border-radius;
@@ -39,6 +57,25 @@
       color: $color-primary;
     }
   }
+  
+}
+@include breakpoint-sm{
+  .clapButton{
+    position: absolute;
+    right: 100px;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 35px;
+  }
+  
+  .clapButton div div:first-of-type{
+    background-color: deeppink;
+    border-radius: 100%;
+  }
+
+  .clapButton div div:last-of-type{
+    color: white;
+  }
 }
 
 @include breakpoint-md {
@@ -49,6 +86,22 @@
 
     .comments {
       @include padding-equal(0);
+    }
+
+    .clapButton{
+      position: fixed;
+      bottom: 100px;
+      right: 50px;
+      padding: 10px;
+    }
+
+    .clapButton div div:first-of-type{
+      background-color: deeppink;
+      border-radius: 100%;
+    }
+
+    .clapButton div div:last-of-type{
+      color: white;
     }
 
     .button {
